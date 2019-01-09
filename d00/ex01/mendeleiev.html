@@ -6,7 +6,7 @@
 <!-- By: pstringe <marvin@42.fr>                    +#+  +:+       +#+       -->
 <!--                                              +#+#+#+#+#+   +#+          -->
 <!-- Created: 2018/06/25 14:33:46 by pstringe          #+#    #+#            -->
-<!-- Updated: 2018/06/25 20:19:01 by pstringe         ###   ########.fr      -->
+<!-- Updated: 2019/01/08 20:22:44 by pstringe         ###   ########.fr      -->
 <!--                                                                         -->
 <!-- *********************************************************************** -->
 
@@ -18,6 +18,8 @@
 		<style>
 			.table
 			{
+				width: 100%;
+				height: auto;
 				display: block;
 			}
 			.period
@@ -86,11 +88,11 @@
 				text-align: center;
 				margin: 0 auto;
 				font-weight: 900;
-				font-size: 24;
+				font-size: 24px;
 			}
 			.a_weight
 			{
-				font-size: 10;
+				font-size: 12px;
 				display: block;
 				text-align: right;
 			}
@@ -98,18 +100,85 @@
 			{
 				display: block;
 				text-align: left;
-				font-size: 12;
+				font-size: 10px;
+			}
+			@media screen and (max-width: 1000px)
+			{
+				
+				.a_sym
+				{
+					display: block;
+					text-align: center;
+					margin: 0 auto;
+					font-weight: 900;
+					font-size: 1.75vw;
+				}
+				.a_weight
+				{
+					font-size: 0vw;
+					display: block;
+					text-align: right;
+				}
+				.a_no
+				{
+					display: block;
+					text-align: left;
+					font-size: 1.5vw;
+				}
+			}
+
+			@media screen and (max-width: 600px)
+			{
+				.a_sym
+				{
+					display: block;
+					text-align: center;
+					margin: 0 auto;
+					font-weight: 900;
+					font-size: 1.5vw;
+				}
+				.a_weight
+				{
+					font-size: 0vw;
+					display: block;
+					text-align: right;
+				}
+				.a_no
+				{
+					display: block;
+					text-align: left;
+					font-size: 0vw;
+				}
+			}
+			#image
+			{
+				margin-left: auto;
+				margin-right: auto;
+				width: 200px;
+				height: auto;
+			}
+			.responsive
+			{
+				width: 100%;
+				height: auto;
+			}
+			.container
+			{
+				display: grid;
 			}
 		</style>
 	</head>
 
 	<body>
+		<div contenteditable="true"class="container">
 		<div class="head">
 			<h1>
 				The Periodic Table of Elements
 			</h1>
 		</div>
-
+		<div id="image">
+			<img class="responsive" src="m.jpg" />
+		</div>
 		<div class="table">
 			<div class="period p_1">
 				<div class="elem nonmetals">
@@ -785,8 +854,8 @@
 					<div class="a_sym">
 						Cu
 					</div>
-						29
 					<div class="a_no" >
+						29
 					</div>
 				</div>
 
@@ -1002,8 +1071,8 @@
 					<div class="a_sym">
 						Ag
 					</div>
-						47
 					<div class="a_no" >
+						47
 					</div>
 				</div>
 
@@ -1219,8 +1288,8 @@
 					<div class="a_sym">
 						Au
 					</div>
-						79
 					<div class="a_no" >
+						79
 					</div>
 				</div>
 
@@ -1436,7 +1505,6 @@
 					<div class="a_sym">
 						Rg
 					</div>
-						29
 					<div class="a_no">
 						111
 					</div>
@@ -1847,5 +1915,6 @@
 			</div>
 		</div>
 		<hr>
+		</div>
 	</body>
 </html>
