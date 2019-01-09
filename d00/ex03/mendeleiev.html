@@ -1,0 +1,1920 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- mendeleiev.html                                    :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: pstringe <marvin@42.fr>                    +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2018/06/25 14:33:46 by pstringe          #+#    #+#            -->
+<!-- Updated: 2019/01/08 20:19:38 by pstringe         ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+
+<html>
+	<head>
+		<title>
+			The Periodic Table of Elements
+		</title>
+		<style>
+			.table
+			{
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+			.period
+			{
+				display: flex;
+			}
+			.period > div
+			{
+				flex: 1;
+			}
+			.elem 
+			{
+				background-color: pink;
+				margin: 5px;
+				border-radius: 5px;
+				padding: 5px;
+			}
+
+			.nonmetals
+			{
+				background-color: #A498E8;
+			}
+			.alkali
+			{
+				background-color: #F9DC90;
+			}
+			.alkaline
+			{
+				background-color: #F4F395;
+			}
+			.other-metals
+			{
+				background-color: #FAF993;
+			}
+			.transition
+			{
+				background-color: #F0FBAA;
+			}
+			.lanthanoids
+			{
+				background-color: #D0F39D;
+			}
+			.actinoids
+			{
+				background-color: #C4F0AA;
+			}
+			.metaloids
+			{
+				background-color: #A2FBA6;
+			}
+			.halogens
+			{
+				background-color: #F893F2;
+			}
+			.nobel-gases
+			{
+				background-color: #A4E1F5;
+			}
+			.empty
+			{
+				background-color: white;
+			}
+			.a_sym
+			{
+				display: block;
+				text-align: center;
+				margin: 0 auto;
+				font-weight: 900;
+				font-size: 24px;
+			}
+			.a_weight
+			{
+				font-size: 12px;
+				display: block;
+				text-align: right;
+			}
+			.a_no
+			{
+				display: block;
+				text-align: left;
+				font-size: 10px;
+			}
+			@media screen and (max-width: 1000px)
+			{
+				
+				.a_sym
+				{
+					display: block;
+					text-align: center;
+					margin: 0 auto;
+					font-weight: 900;
+					font-size: 1.75vw;
+				}
+				.a_weight
+				{
+					font-size: 0vw;
+					display: block;
+					text-align: right;
+				}
+				.a_no
+				{
+					display: block;
+					text-align: left;
+					font-size: 1.5vw;
+				}
+			}
+
+			@media screen and (max-width: 600px)
+			{
+				.a_sym
+				{
+					display: block;
+					text-align: center;
+					margin: 0 auto;
+					font-weight: 900;
+					font-size: 1.5vw;
+				}
+				.a_weight
+				{
+					font-size: 0vw;
+					display: block;
+					text-align: right;
+				}
+				.a_no
+				{
+					display: block;
+					text-align: left;
+					font-size: 0vw;
+				}
+			}
+			#image
+			{
+				margin-left: auto;
+				margin-right: auto;
+				width: 200px;
+				height: auto;
+			}
+			.responsive
+			{
+				width: 100%;
+				height: auto;
+			}
+			.container
+			{
+				display: grid;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+		<div class="head">
+			<h1>
+				The Periodic Table of Elements
+			</h1>
+		</div>
+		<div id="image">
+			<img class="responsive" src="m.jpg" />
+		</div>
+		<div class="table">
+			<div class="period p_1">
+				<div class="elem nonmetals">
+					<div class="a_weight">
+						1.00794	
+					</div>
+					<div class="a_sym">
+						H
+					</div>
+					<div class="a_no" >
+						1
+					</div>
+				</div>
+
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+				
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+				
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+				
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+				
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+
+				<div class="elem nobel-gases">
+					<div class="a_weight">
+						4.002602
+					</div>
+					<div class="a_sym">
+						He
+					</div>
+					<div class="a_no" >
+						2
+					</div>
+				</div>
+			</div>
+
+			<div class="period p_2">
+				<div class="elem alkali">
+					<div class="a_weight">
+						6.941
+					</div>
+					<div class="a_sym">
+						Li
+					</div>
+					<div class="a_no" >
+						3
+					</div>
+				</div>
+
+				<div class="elem alkaline">
+					<div class="a_weight">
+						9.012182
+					</div>
+					<div class="a_sym">
+						Be
+					</div>
+					<div class="a_no">
+						4
+					</div>
+				</div>
+				
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+				
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+				
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+				
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+
+				<div class="elem metaloids">
+					<div class="a_weight">
+						10.811
+					</div>
+					<div class="a_sym">
+						B
+					</div>
+					<div class="a_no" >
+						5
+					</div>
+				</div>
+
+				<div class="elem nonmetals">
+					<div class="a_weight">
+						12.0107
+					</div>
+					<div class="a_sym">
+						C
+					</div>
+					<div class="a_no" >
+						6
+					</div>
+				</div>
+
+				<div class="elem nonmetals">
+					<div class="a_weight">
+						14.0067
+					</div>
+					<div class="a_sym">
+						N
+					</div>
+					<div class="a_no" >
+						7
+					</div>
+				</div>
+
+				<div class="elem nonmetals">
+					<div class="a_weight">
+						15.9994
+					</div>
+					<div class="a_sym">
+						O
+					</div>
+					<div class="a_no" >
+						8
+					</div>
+				</div>
+
+				<div class="elem halogens">
+					<div class="a_weight">
+						18.998403
+					</div>
+					<div class="a_sym">
+						F
+					</div>
+					<div class="a_no" >
+						9
+					</div>
+				</div>
+
+				<div class="elem nobel-gases">
+					<div class="a_weight">
+						20.1797
+					</div>
+					<div class="a_sym">
+						Ne
+					</div>
+					<div class="a_no" >
+						10
+					</div>
+				</div>
+			</div>
+
+			<div class="period p_3">
+				<div class="elem alkali">
+					<div class="a_weight">
+						22.98976
+					</div>
+					<div class="a_sym">
+						Na
+					</div>
+					<div class="a_no" >
+						11
+					</div>
+				</div>
+
+				<div class="elem alkaline">
+					<div class="a_weight">
+						9.012182
+					</div>
+					<div class="a_sym">
+						Mg
+					</div>
+					<div class="a_no">
+						12
+					</div>
+				</div>
+				
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+				
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+				
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+				
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+
+				<div class="empty elem">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+					</div>
+					<div class="a_no" >
+					</div>
+				</div>
+
+				<div class="elem other-metals">
+					<div class="a_weight">
+						26.98153
+					</div>
+					<div class="a_sym">
+						Al
+					</div>
+					<div class="a_no" >
+						13
+					</div>
+				</div>
+
+				<div class="elem metaloids">
+					<div class="a_weight">
+						28.0855
+					</div>
+					<div class="a_sym">
+						Si
+					</div>
+					<div class="a_no" >
+						14
+					</div>
+				</div>
+
+				<div class="elem nonmetals">
+					<div class="a_weight">
+						30.97696
+					</div>
+					<div class="a_sym">
+						P
+					</div>
+					<div class="a_no" >
+						15
+					</div>
+				</div>
+
+				<div class="elem nonmetals">
+					<div class="a_weight">
+						32.97696
+					</div>
+					<div class="a_sym">
+						S
+					</div>
+					<div class="a_no" >
+						16
+					</div>
+				</div>
+
+				<div class="elem halogens">
+					<div class="a_weight">
+						35.453
+					</div>
+					<div class="a_sym">
+						Cl
+					</div>
+					<div class="a_no" >
+						17
+					</div>
+				</div>
+
+				<div class="elem nobel-gases">
+					<div class="a_weight">
+						39.948
+					</div>
+					<div class="a_sym">
+						Ar
+					</div>
+					<div class="a_no" >
+						18
+					</div>
+				</div>
+			</div>
+
+			<div class="period p_4">
+				<div class="elem alkali">
+					<div class="a_weight">
+						39.0983
+					</div>
+					<div class="a_sym">
+						K
+					</div>
+					<div class="a_no" >
+						19
+					</div>
+				</div>
+
+				<div class="elem alkaline">
+					<div class="a_weight">
+						24.3050
+					</div>
+					<div class="a_sym">
+						Ca
+					</div>
+					<div class="a_no" >
+						20
+					</div>
+				</div>
+				
+				<div class="elem transition">
+					<div class="a_weight">
+						44.95591
+					</div>
+					<div class="a_sym">
+						Sc
+					</div>
+					<div class="a_no">
+						21
+					</div>
+				</div>
+				
+				<div class="elem transition">
+					<div class="a_weight">
+						47.867
+					</div>
+					<div class="a_sym">
+						Ti
+					</div>
+					<div class="a_no" >
+						22
+					</div>
+				</div>
+				
+				<div class="elem transition">
+					<div class="a_weight">
+						50.9415
+					</div>
+					<div class="a_sym">
+						V
+					</div>
+					<div class="a_no" >
+						23
+					</div>
+				</div>
+				
+				<div class="elem transition">
+					<div class="a_weight">
+						51.9962
+					</div>
+					<div class="a_sym">
+						Cr
+					</div>
+					<div class="a_no" >
+						24
+					</div>
+				</div>
+
+				<div class="elem transition">
+					<div class="a_weight">
+						54.93804
+					</div>
+					<div class="a_sym">
+						Mn
+					</div>
+					<div class="a_no" >
+						25
+					</div>
+				</div>
+
+				<div class="elem transition">
+					<div class="a_weight">
+						55.845
+					</div>
+					<div class="a_sym">
+						Fe
+					</div>
+					<div class="a_no" >
+						26
+					</div>
+				</div>
+
+				<div class="elem transition">
+					<div class="a_weight">
+						58.93319
+					</div>
+					<div class="a_sym">
+						Co
+					</div>
+					<div class="a_no" >
+						27
+					</div>
+				</div>
+
+				<div class="elem transition">
+					<div class="a_weight">
+						58.6934
+					</div>
+					<div class="a_sym">
+						Ni
+					</div>
+					<div class="a_no" >
+						28
+					</div>
+				</div>
+
+				<div class="elem transition">
+					<div class="a_weight">
+						63.546
+					</div>
+					<div class="a_sym">
+						Cu
+					</div>
+					<div class="a_no" >
+						29
+					</div>
+				</div>
+
+				<div class="elem transition">
+					<div class="a_weight">
+						65.38
+					</div>
+					<div class="a_sym">
+						Zn
+					</div>
+					<div class="a_no" >
+						30
+					</div>
+				</div>
+
+				<div class="elem other-metals">
+					<div class="a_weight">
+						69.723
+					</div>
+					<div class="a_sym">
+						Ga
+					</div>
+					<div class="a_no" >
+						31
+					</div>
+				</div>
+
+				<div class="elem metaloids">
+					<div class="a_weight">
+						72.64
+					</div>
+					<div class="a_sym">
+						Ge
+					</div>
+					<div class="a_no">
+						31
+					</div>
+				</div>
+
+				<div class="elem metaloids">
+					<div class="a_weight">
+						74.92160
+					</div>
+					<div class="a_sym">
+						As
+					</div>
+					<div class="a_no">
+						33
+					</div>
+				</div>
+
+				<div class="elem nonmetals">
+					<div class="a_weight">
+					</div>
+					<div class="a_sym">
+						Se
+					</div>
+					<div class="a_no" >
+						34
+					</div>
+				</div>
+
+				<div class="elem halogens">
+					<div class="a_weight">
+						79.904
+					</div>
+					<div class="a_sym">
+						Br
+					</div>
+					<div class="a_no">
+						35
+					</div>
+				</div>
+
+				<div class="elem nobel-gases">
+					<div class="a_weight">
+						83.798
+					</div>
+					<div class="a_sym">
+						Kr
+					</div>
+					<div class="a_no">
+						36
+					</div>
+				</div>
+			</div>
+
+			<div class="period p_5">
+				<div class="elem alkali">
+					<div class="a_weight">
+						85.4678
+					</div>
+					<div class="a_sym">
+						Rb
+					</div>
+					<div class="a_no" >
+						37
+					</div>
+				</div>
+
+				<div class="elem alkaline">
+					<div class="a_weight">
+						87.62
+					</div>
+					<div class="a_sym">
+						Sr
+					</div>
+					<div class="a_no" >
+						38
+					</div>
+				</div>
+				
+				<div class="elem transition">
+					<div class="a_weight">
+						88.90585
+					</div>
+					<div class="a_sym">
+						Y
+					</div>
+					<div class="a_no">
+						39
+					</div>
+				</div>
+				
+				<div class="elem transition">
+					<div class="a_weight">
+						91.224
+					</div>
+					<div class="a_sym">
+						Zr
+					</div>
+					<div class="a_no" >
+						40
+					</div>
+				</div>
+				
+				<div class="elem transition">
+					<div class="a_weight">
+						92.90638
+					</div>
+					<div class="a_sym">
+						Nb
+					</div>
+					<div class="a_no" >
+						41
+					</div>
+				</div>
+				
+				<div class="elem transition">
+					<div class="a_weight">
+						95.96
+					</div>
+					<div class="a_sym">
+						Mo
+					</div>
+					<div class="a_no" >
+						42
+					</div>
+				</div>
+
+				<div class="elem transition">
+					<div class="a_weight">
+						98
+					</div>
+					<div class="a_sym">
+						Tc
+					</div>
+					<div class="a_no" >
+						43
+					</div>
+				</div>
+
+				<div class="elem transition">
+					<div class="a_weight">
+						101.07
+					</div>
+					<div class="a_sym">
+						Ru
+					</div>
+					<div class="a_no" >
+						44
+					</div>
+				</div>
+
+				<div class="elem transition">
+					<div class="a_weight">
+						102.9055
+					</div>
+					<div class="a_sym">
+						Rh
+					</div>
+					<div class="a_no" >
+						45
+					</div>
+				</div>
+
+				<div class="elem transition">
+					<div class="a_weight">
+						106.42
+					</div>
+					<div class="a_sym">
+						Pd
+					</div>
+					<div class="a_no" >
+						46
+					</div>
+				</div>
+
+				<div class="elem transition">
+					<div class="a_weight">
+						107.8682
+					</div>
+					<div class="a_sym">
+						Ag
+					</div>
+					<div class="a_no" >
+						47
+					</div>
+				</div>
+
+				<div class="elem transition">
+					<div class="a_weight">
+						112.442
+					</div>
+					<div class="a_sym">
+						Cd
+					</div>
+					<div class="a_no" >
+						48
+					</div>
+				</div>
+
+				<div class="elem other-metals">
+					<div class="a_weight">
+						114.818
+					</div>
+					<div class="a_sym">
+						In
+					</div>
+					<div class="a_no" >
+						49
+					</div>
+				</div>
+
+				<div class="elem other-metals">
+					<div class="a_weight">
+						118.710
+					</div>
+					<div class="a_sym">
+						Sn
+					</div>
+					<div class="a_no">
+						50
+					</div>
+				</div>
+
+				<div class="elem metaloids">
+					<div class="a_weight">
+						1221.760
+					</div>
+					<div class="a_sym">
+						Sb
+					</div>
+					<div class="a_no">
+						51
+					</div>
+				</div>
+
+				<div class="elem metaloids">
+					<div class="a_weight">
+						127.60
+					</div>
+					<div class="a_sym">
+						Te
+					</div>
+					<div class="a_no" >
+						52
+					</div>
+				</div>
+
+				<div class="elem halogens">
+					<div class="a_weight">
+						126.9044
+					</div>
+					<div class="a_sym">
+						I
+					</div>
+					<div class="a_no">
+						53
+					</div>
+				</div>
+
+				<div class="elem nobel-gases">
+					<div class="a_weight">
+						131.293
+					</div>
+					<div class="a_sym">
+						Xe
+					</div>
+					<div class="a_no">
+						54
+					</div>
+				</div>
+			</div>
+			<div class="period p_6">
+				<div class="elem alkali">
+					<div class="a_weight">
+						132.9054
+					</div>
+					<div class="a_sym">
+						Cs
+					</div>
+					<div class="a_no" >
+						55
+					</div>
+				</div>
+
+				<div class="elem alkaline">
+					<div class="a_weight">
+						137.327
+					</div>
+					<div class="a_sym">
+						Ba
+					</div>
+					<div class="a_no" >
+						56
+					</div>
+				</div>
+				
+				<div class="elem transition">
+					<div class="a_weight">
+						174.9668
+					</div>
+					<div class="a_sym">
+						Lu
+					</div>
+					<div class="a_no">
+						71
+					</div>
+				</div>
+				
+				<div class="elem transition">
+					<div class="a_weight">
+						178.49
+					</div>
+					<div class="a_sym">
+						Hf
+					</div>
+					<div class="a_no" >
+						72
+					</div>
+				</div>
+				
+				<div class="elem transition">
+					<div class="a_weight">
+						180.9478
+					</div>
+					<div class="a_sym">
+						Ta
+					</div>
+					<div class="a_no" >
+						73
+					</div>
+				</div>
+				
+				<div class="elem transition">
+					<div class="a_weight">
+						183.84
+					</div>
+					<div class="a_sym">
+						W
+					</div>
+					<div class="a_no" >
+						74
+					</div>
+				</div>
+
+				<div class="elem transition">
+					<div class="a_weight">
+						186.207
+					</div>
+					<div class="a_sym">
+						Re
+					</div>
+					<div class="a_no" >
+						75
+					</div>
+				</div>
+
+				<div class="elem transition">
+					<div class="a_weight">
+						190.23
+					</div>
+					<div class="a_sym">
+						Os
+					</div>
+					<div class="a_no" >
+						76
+					</div>
+				</div>
+
+				<div class="elem transition">
+					<div class="a_weight">
+						1902.217		
+					</div>
+					<div class="a_sym">
+						Ir
+					</div>
+					<div class="a_no" >
+						77
+					</div>
+				</div>
+
+				<div class="elem transition">
+					<div class="a_weight">
+						195.084
+					</div>
+					<div class="a_sym">
+						Pt
+					</div>
+					<div class="a_no" >
+						79
+					</div>
+				</div>
+
+				<div class="elem transition">
+					<div class="a_weight">
+						196.9665
+					</div>
+					<div class="a_sym">
+						Au
+					</div>
+					<div class="a_no" >
+						79
+					</div>
+				</div>
+
+				<div class="elem transition">
+					<div class="a_weight">
+						200.59
+					</div>
+					<div class="a_sym">
+						Hg
+					</div>
+					<div class="a_no" >
+						80
+					</div>
+				</div>
+
+				<div class="elem other-metals">
+					<div class="a_weight">
+						204.3833
+					</div>
+					<div class="a_sym">
+						Tl
+					</div>
+					<div class="a_no" >
+						81
+					</div>
+				</div>
+
+				<div class="elem other-metals">
+					<div class="a_weight">
+						207.2
+					</div>
+					<div class="a_sym">
+						Pb
+					</div>
+					<div class="a_no">
+						82
+					</div>
+				</div>
+
+				<div class="elem other-metals">
+					<div class="a_weight">
+						208.9804
+					</div>
+					<div class="a_sym">
+						Bi
+					</div>
+					<div class="a_no">
+						83
+					</div>
+				</div>
+
+				<div class="elem metaloids">
+					<div class="a_weight">
+						(210)
+					</div>
+					<div class="a_sym">
+						Po
+					</div>
+					<div class="a_no" >
+						84
+					</div>
+				</div>
+
+				<div class="elem halogens">
+					<div class="a_weight">
+						(210)
+					</div>
+					<div class="a_sym">
+						At
+					</div>
+					<div class="a_no">
+						85
+					</div>
+				</div>
+
+				<div class="elem nobel-gases">
+					<div class="a_weight">
+						(220)
+					</div>
+					<div class="a_sym">
+						Rn
+					</div>
+					<div class="a_no">
+						86
+					</div>
+				</div>
+			</div>
+			<div class="period p_7">
+				<div class="elem alkali">
+					<div class="a_weight">
+						(223)
+					</div>
+					<div class="a_sym">
+						Fr
+					</div>
+					<div class="a_no" >
+						87
+					</div>
+				</div>
+
+				<div class="elem alkaline">
+					<div class="a_weight">
+						(226)
+					</div>
+					<div class="a_sym">
+						Ra
+					</div>
+					<div class="a_no" >
+						88
+					</div>
+				</div>
+				
+				<div class="elem transition">
+					<div class="a_weight">
+						(227)
+					</div>
+					<div class="a_sym">
+						Ac
+					</div>
+					<div class="a_no">
+						89
+					</div>
+				</div>
+				
+				<div class="elem transition">
+					<div class="a_weight">
+						(267)
+					</div>
+					<div class="a_sym">
+						Rf
+					</div>
+					<div class="a_no" >
+						104
+					</div>
+				</div>
+				
+				<div class="elem transition">
+					<div class="a_weight">
+						(268)
+					</div>
+					<div class="a_sym">
+						Db
+					</div>
+					<div class="a_no" >
+						105
+					</div>
+				</div>
+				
+				<div class="elem transition">
+					<div class="a_weight">
+						(269)
+					</div>
+					<div class="a_sym">
+						Sg
+					</div>
+					<div class="a_no" >
+						106
+					</div>
+				</div>
+
+				<div class="elem transition">
+					<div class="a_weight">
+						(270)
+					</div>
+					<div class="a_sym">
+						Bh
+					</div>
+					<div class="a_no" >
+						107
+					</div>
+				</div>
+
+				<div class="elem transition">
+					<div class="a_weight">
+						(277)
+					</div>
+					<div class="a_sym">
+						Hs
+					</div>
+					<div class="a_no" >
+						108
+					</div>
+				</div>
+
+				<div class="elem">
+					<div class="a_weight">
+						(270)
+					</div>
+					<div class="a_sym">
+						Mt
+					</div>
+					<div class="a_no" >
+						109
+					</div>
+				</div>
+
+				<div class="elem">
+					<div class="a_weight">
+						(281)
+					</div>
+					<div class="a_sym">
+						Ds
+					</div>
+					<div class="a_no" >
+						110
+					</div>
+				</div>
+
+				<div class="elem">
+					<div class="a_weight">
+						(282)
+					</div>
+					<div class="a_sym">
+						Rg
+					</div>
+					<div class="a_no">
+						111
+					</div>
+				</div>
+
+				<div class="elem transition">
+					<div class="a_weight">
+						(285)
+					</div>
+					<div class="a_sym">
+						Cn
+					</div>
+					<div class="a_no" >
+						112
+					</div>
+				</div>
+
+				<div class="elem">
+					<div class="a_weight">
+						(286)
+					</div>
+					<div class="a_sym">
+						Nh
+					</div>
+					<div class="a_no" >
+						113
+					</div>
+				</div>
+
+				<div class="elem other-metals">
+					<div class="a_weight">
+						(289)
+					</div>
+					<div class="a_sym">
+						Fl
+					</div>
+					<div class="a_no">
+						113
+					</div>
+				</div>
+
+				<div class="elem">
+					<div class="a_weight">
+						(290)
+					</div>
+					<div class="a_sym">
+						Mc
+					</div>
+					<div class="a_no">
+						115
+					</div>
+				</div>
+
+				<div class="elem">
+					<div class="a_weight">
+						(293)
+					</div>
+					<div class="a_sym">
+						Lv
+					</div>
+					<div class="a_no" >
+						116
+					</div>
+				</div>
+
+				<div class="elem">
+					<div class="a_weight">
+						(294)
+					</div>
+					<div class="a_sym">
+						Ts
+					</div>
+					<div class="a_no">
+						117
+					</div>
+				</div>
+
+				<div class="elem">
+					<div class="a_weight">
+						(294)
+					</div>
+					<div class="a_sym">
+						Og
+					</div>
+					<div class="a_no">
+						118
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="table">
+			<div class="period p_6">
+				<div class="elem actinoids">
+					<div class="a_weight">
+						140.112
+					</div>
+					<div class="a_sym">
+						Ce
+					</div>
+					<div class="a_no">
+						58
+					</div>
+				</div>
+				<div class="elem actinoids">
+					<div class="a_weight">
+						140.91
+					</div>
+					<div class="a_sym">
+						Pr
+					</div>
+					<div class="a_no">
+						59
+					</div>
+				</div>
+				<div class="elem actinoids">
+					<div class="a_weight">
+						144.24
+					</div>
+					<div class="a_sym">
+						Nd
+					</div>
+					<div class="a_no">
+						60
+					</div>
+				</div>
+				<div class="elem actinoids">
+					<div class="a_weight">
+						(145)
+					</div>
+					<div class="a_sym">
+						Pm
+					</div>
+					<div class="a_no">
+						61
+					</div>
+				</div>
+				<div class="elem actinoids">
+					<div class="a_weight">
+						150.36
+					</div>
+					<div class="a_sym">
+						Sm
+					</div>
+					<div class="a_no">
+						62
+					</div>
+				</div>
+				<div class="elem actinoids">
+					<div class="a_weight">
+						157.96
+					</div>
+					<div class="a_sym">
+						Eu
+					</div>
+					<div class="a_no">
+						63
+					</div>
+				</div>
+				<div class="elem actinoids">
+					<div class="a_weight">
+						157.25
+					</div>
+					<div class="a_sym">
+						Gd
+					</div>
+					<div class="a_no">
+						54
+					</div>
+				</div>
+				<div class="elem actinoids">
+					<div class="a_weight">
+						158.93
+					</div>
+					<div class="a_sym">
+						Tb
+					</div>
+					<div class="a_no">
+						65
+					</div>
+				</div>
+				<div class="elem actinoids">
+					<div class="a_weight">
+						162.50
+					</div>
+					<div class="a_sym">
+						Dy
+					</div>
+					<div class="a_no">
+						66
+					</div>
+				</div>
+				<div class="elem actinoids">
+					<div class="a_weight">
+						164.93
+					</div>
+					<div class="a_sym">
+						Ho
+					</div>
+					<div class="a_no">
+						67
+					</div>
+				</div>
+				<div class="elem actinoids">
+					<div class="a_weight">
+						167.26
+					</div>
+					<div class="a_sym">
+						Er
+					</div>
+					<div class="a_no">
+						68
+					</div>
+				</div>
+				<div class="elem actinoids">
+					<div class="a_weight">
+						168.93
+					</div>
+					<div class="a_sym">
+						Tm
+					</div>
+					<div class="a_no">
+						69
+					</div>
+				</div>
+				<div class="elem actinoids">
+					<div class="a_weight">
+						173.05
+					</div>
+					<div class="a_sym">
+						Yb
+					</div>
+					<div class="a_no">
+						70
+					</div>
+				</div>
+				<div class="elem actinoids">
+					<div class="a_weight">
+						174.97
+					</div>
+					<div class="a_sym">
+						Lu
+					</div>
+					<div class="a_no">
+						71
+					</div>
+				</div>
+			</div>
+
+			<div class = "period p_6">
+				<div class="elem lanthanoids">
+					<div class="a_weight">
+						232.04
+					</div>
+					<div class="a_sym">
+						Th
+					</div>
+					<div class="a_no">
+						232.04
+					</div>
+				</div>
+				<div class="elem lanthanoids">
+					<div class="a_weight">
+						231.04
+					</div>
+					<div class="a_sym">
+						Pa
+					</div>
+					<div class="a_no">
+						91
+					</div>
+				</div>
+				<div class="elem lanthanoids">
+					<div class="a_weight">
+						238.03
+					</div>
+					<div class="a_sym">
+						U
+					</div>
+					<div class="a_no">
+						92
+					</div>
+				</div>
+				<div class="elem lanthanoids">
+					<div class="a_weight">
+						(237)
+					</div>
+					<div class="a_sym">
+						Np
+					</div>
+					<div class="a_no">
+						93
+					</div>
+				</div>
+				<div class="elem lanthanoids">
+					<div class="a_weight">
+						(244)
+					</div>
+					<div class="a_sym">
+						Pu
+					</div>
+					<div class="a_no">
+						94
+					</div>
+				</div>
+				<div class="elem lanthanoids">
+					<div class="a_weight">
+						(234)
+					</div>
+					<div class="a_sym">
+						Am
+					</div>
+					<div class="a_no">
+						95
+					</div>
+				</div>
+				<div class="elem lanthanoids">
+					<div class="a_weight">
+						(247)
+					</div>
+					<div class="a_sym">
+						Cm
+					</div>
+					<div class="a_no">
+						96
+					</div>
+				</div>
+				<div class="elem lanthanoids">
+					<div class="a_weight">
+						(247)
+					</div>
+					<div class="a_sym">
+						Bk
+					</div>
+					<div class="a_no">
+						97
+					</div>
+				</div>
+				<div class="elem lanthanoids">
+					<div class="a_weight">
+						(251)
+					</div>
+					<div class="a_sym">
+						Cf
+					</div>
+					<div class="a_no">
+						98
+					</div>
+				</div>
+				<div class="elem lanthanoids">
+					<div class="a_weight">
+						(252)
+					</div>
+					<div class="a_sym">
+						Es
+					</div>
+					<div class="a_no">
+						99
+					</div>
+				</div>
+				<div class="elem lanthanoids">
+					<div class="a_weight">
+						(257)
+					</div>
+					<div class="a_sym">
+						Fm
+					</div>
+					<div class="a_no">
+						100
+					</div>
+				</div>
+				<div class="elem lanthanoids">
+					<div class="a_weight">
+						(258)
+					</div>
+					<div class="a_sym">
+						Md
+					</div>
+					<div class="a_no">
+						101
+					</div>
+				</div>
+				<div class="elem lanthanoids">
+					<div class="a_weight">
+						(259)
+					</div>
+					<div class="a_sym">
+						No
+					</div>
+					<div class="a_no">
+						102
+					</div>
+				</div>
+				<div class="elem lanthanoids">
+					<div class="a_weight">
+						(266)
+					</div>
+					<div class="a_sym">
+						Lr
+					</div>
+					<div class="a_no">
+						103
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<hr>
+		</div>
+	</body>
+</html>
