@@ -1,0 +1,133 @@
+.container
+{
+	display: grid;
+	grid-template-columns: 10fr 150fr 1000fr 150fr 10fr;
+	column-gap: 1em;
+	row-gap: 1em;
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+.title
+{
+	float: left;
+	width: 40%;
+	height: auto;
+}
+
+.header
+{
+	grid-column-start: 1;
+	grid-column-end: 6;
+}
+
+.inner-header
+{
+	padding: 5px;
+	float: right;
+	width: 2%;
+	min-height: 100%;
+}
+
+.reload
+{
+	display: block;
+	margin-top: 0;
+	margin-bottom: %80;
+}
+
+.close
+{
+	display: block;
+	margin-bottom: 0;
+}
+
+.pane
+{
+	height: 80%;
+	padding: 10px;
+}
+
+.pane img
+{
+	margin-top: 5px;
+}
+
+.left
+{
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.main
+{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	max-width: 1000px;
+}
+
+.right
+{
+	grid-column-start: 4;
+	grid-column-stop: 5;
+}
+
+.window
+{
+	background-color: #8F8F8F;
+	border-radius: .5em;
+	box-shadow: 1em 1em 1em black;
+}
+
+.text
+{
+	background-color: #8F8;
+	grid-row-start: 3;
+	grid-column-start: 3;
+	margin-left: 30px;
+	width: 200em;
+	max-width: 450px;
+	height: auto;
+	padding: 10px;
+	position: relative;
+	right: 150px;
+	top: -50px;
+	font-size: 1em;
+}
+
+.glass
+{
+	float: right;
+	width: 20%;
+	height: auto;
+}
+
+
+.responsive-pane
+{
+	margin: 0 auto;
+	display: block;
+	width: 60%;
+	height: auto;
+}
+
+.responsive
+{
+	width: 100%;
+	height: auto;
+}
+
+#repondre
+{
+	width: 60%;
+}	
+
+#entrez
+{
+	font-size: 2em;
+	font-style: bold;
+}
+body
+{
+	background-color: grey;
+}
