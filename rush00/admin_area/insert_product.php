@@ -13,7 +13,7 @@
 			$id = $row['brand_id'];
 			$title = $row['brand_title'];
 
-			echo "<option value='$title'>$title</option>";
+			echo "<option value='$id'>$title</option>";
 		}
 	}
 
@@ -29,7 +29,7 @@
 			$id = $row['cat_id'];
 			$title =$row['cat_title'];
 
-			echo "<option value='$title'>$title</option>";
+			echo "<option value='$id'>$title</option>";
 		}
 	}
 ?>
