@@ -2,7 +2,22 @@
 <?php
 	include("includes/db.php");
 
-	//dynamically retrieve category names for selection in insert_product.php
+	//dynamically retrieve brand names for selection
+	function getBrandSelect()
+	{
+		global $con;
+			
+		$get_brands = "select * from brands";
+		$run_brands = mysqli_query($con, $get_brands);
+		while ($row = mysqli_fetch_array($run_brands)){
+			$id = $row['brand_id'];
+			$title = $row['brand_title'];
+
+			echo "<option value='$title'>$title</option>";
+		}
+	}
+
+	//dynamically retrieve category names for selection
 	function getCategoriesSelect()
 	{
 		global $con;
@@ -18,6 +33,7 @@
 		}
 	}
 ?>
+
 <html>
 	<head>
 		<title>Add New Products</title>
@@ -38,7 +54,12 @@
 					</select>
 				</div>
 				<div class="product_input">
-					Product Brand: <input type="text" name="product_brand">
+					Product Brand:
+					<select name="product_brand">
+						<?php
+							getBrandSelect();
+						?>
+					</select>
 				</div>
 				<div class="product_input">
 					Product Image: <input type="text" name="product_image">
