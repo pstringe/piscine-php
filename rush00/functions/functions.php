@@ -1,7 +1,7 @@
 <?php
 	$con = mysqli_connect('127.0.0.1:8889', 'root', 'root', 'ecommerce') or die("Connection Failed");
 
-	//get categories
+	//dynamically retrieve categories for sidebar
 	function getCategories()
 	{
 		global $con;
@@ -14,6 +14,22 @@
 			$title =$row['cat_title'];
 
 			echo "<div class='catergory_link'><a href='#'>$title</a></div>";
+		}
+	}
+
+	//dynamically retrieve brands for sidebar 
+	function getBrands()
+	{
+		global $con;
+			
+		//echo var_dump($con);
+		$get_brands = "select * from brands";
+		$run_brands = mysqli_query($con, $get_brands);
+		while ($row = mysqli_fetch_array($run_brands)){
+			$id = $row['brand_id'];
+			$title =$row['brand_title'];
+
+			echo "<div class='brand_link'><a href='#'>$title</a></div>";
 		}
 	}
 ?>

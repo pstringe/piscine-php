@@ -32,16 +32,18 @@
 				</div>
 			</div>
 			<div class="sidebar">
-				<div id="sidebar_title">
+				<div class="sidebar_heading">
+					Brands
+				</div>
+				<div id="Brands">
+					<?php getBrands(); ?>
+				</div>
+				<div class="sidebar_heading">
 					Categories
 				</div>
 				<div id="Categories">
-					<div class="catergory_link"><a href="#">1</a></div>
-					<div class="catergory_link"><a href="#">2</a></div>
-					<div class="catergory_link"><a href="#">4</a></div>
 					<?php getCategories(); ?>
 				</div>
-				
 			</div>
 			<div class="content">
 			</div>
